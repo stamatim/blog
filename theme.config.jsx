@@ -22,7 +22,7 @@ export default {
       >
         CC BY-NC 4.0
       </abbr>{' '}
-      {new Date().getFullYear()} © Shu Ding.
+      {new Date().getFullYear()} © Stamati Morellas.
       <a href="/feed.xml">RSS</a>
       <style jsx>{`
         a {
