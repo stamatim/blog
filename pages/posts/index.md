@@ -1,7 +1,9 @@
 ---
 type: posts
-title: Random Thoughts
-date: 2020-01-03
+title: Thoughts
+date: 2023-02-06
 ---
 
-# Random Thoughts
+# Thoughts
+
+This is where you can find some of my thoughts.
