@@ -6,7 +6,7 @@ export default {
         WebkitBackgroundClip: 'text',
         WebkitTextFillColor: 'transparent',
         backgroundClip: 'text',
-        backgroundImage: 'linear-gradient(90deg,#7928CA,#FF0080)',
+        backgroundImage: 'linear-gradient(90deg,#0061FF,#60EFFF)',
       }}
       >
         {children}
