@@ -11,17 +11,6 @@ export default {
       >
         {children}
       </h1>
-    ),
-    a: ({children}) => (
-      <a style={{
-        WebkitBackgroundClip: 'text',
-        backgroundClip: 'text',
-        backgroundImage: '#007bff',
-        color: '#007BFF'
-      }}
-      >
-        {children}
-      </a>
     )
   },
   darkMode: true,
