@@ -1,0 +1,118 @@
+---
+title: How to install nvm (draft)
+date: 2023/02/21
+description: A guide on using multiple Node.js versions on one machine.
+tag: Web Development,JavaScript,Node.js
+author: Stamati Morellas
+---
+
+# Introduction
+
+As engineers, we tend to deal with lots of different files and projects throughout our time working. 
+When it comes to the JavaScript ecosystem, most platforms and packages require you to have an 
+installation of Node.js on your local (development) machine. 
+It is important to note that most projects do not...
+
+TODO
+
+Node Version Manager (nvm) is a tool that allows you to manage multiple versions of Node.js on your machine. 
+It provides a simple command-line interface for installing and switching between different versions of Node.js.
+In this blog post, we will walk through the installation and basic usage of nvm on Windows, macOS, and Linux machines.
+
+# Installing nvm
+
+## Windows
+
+To install nvm on Windows, you will need to download and run the nvm-setup.zip file from the nvm releases page on GitHub. 
+Once the installation is complete, open a new terminal window and run the following command to verify that nvm has been installed:
+
+```sh
+nvm version
+```
+
+## macOS
+
+To install nvm on macOS, you can use the Homebrew package manager. 
+Open a terminal window and run the following command to install Homebrew:
+
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
+
+Once Homebrew is installed, run the following command to install nvm:
+
+```sh
+brew install nvm
+```
+
+## Linux
+
+To install nvm on Linux, open a terminal window and run the following command to download the nvm installation script:
+
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+```
+
+After the installation script has finished running, close and reopen the terminal window or run the following command to apply the changes:
+
+
+```sh
+source ~/.bashrc
+```
+
+
+# Using nvm
+
+## Installing Node.js
+
+To install a specific version of Node.js using nvm, run the following command:
+
+```sh
+nvm install <version>
+```
+
+For example, to install Node.js version 14.15.4, run the following command:
+
+```sh
+nvm install 14.15.4
+```
+
+To switch to a different version of Node.js, run the following command:
+
+```sh
+nvm use <version>
+```
+
+For example, to switch to Node.js version 16.9.1, run the following command:
+
+```sh
+`nvm use 16.9.1`
+```
+
+## Listing of installed Node.js versions...
+
+To list all the versions of Node.js installed using nvm, run the following command:
+
+```sh
+nvm ls
+```
+
+This will display a list of all the installed Node.js versions and highlight the currently active version.
+
+## Setting a default Node.js version
+
+To set a default version of Node.js to use, run the following command:
+
+```sh
+nvm alias default <version>
+```
+
+For example, to set Node.js version 16.9.1 as the default version, run the following command:
+
+```sh
+nvm alias default 16.9.1
+```
+
+## Conclusion
+
+Node Version Manager (nvm) is a useful tool for managing multiple versions of Node.js on your machine. With nvm, you can easily install, switch between, and manage different versions of Node.js. By following the steps outlined in this blog post, you should be able to install and use nvm on your Windows, macOS, or Linux machine with ease.
