@@ -11,28 +11,20 @@ export default {
       >
         {children}
       </h1>
-    ),
-    a: ({children}) => (
-      <a style={{
-        WebkitBackgroundClip: 'text',
-        backgroundClip: 'text',
-        backgroundImage: '#007bff',
-        color: '#007BFF'
-      }}
-      >
-        {children}
-      </a>
     )
   },
   darkMode: true,
+  head: ({ title, meta }) => (
+    <>
+      {meta.description && (
+        <meta name="description" content={meta.description} />
+      )}
+      {meta.tag && <meta name="keywords" content={meta.tag} />}
+      {meta.author && <meta name="author" content={meta.author} />}
+    </>
+  ),
   footer: (
     <small style={{ display: 'block', marginTop: '8rem' }}>
-      <abbr
-        title="This site and all its content are licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
-        style={{ cursor: 'help' }}
-      >
-        CC BY-NC 4.0
-      </abbr>{' '}
       {new Date().getFullYear()} © Stamati Morellas.
       <a href="/feed.xml">RSS</a>
       <style jsx>{`
@@ -48,5 +40,7 @@ export default {
         }
       `}</style>
     </small>
-  )
+  ),
+  readMore: 'Read More →',
+  postFooter: true,
 }
