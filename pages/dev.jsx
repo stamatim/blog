@@ -1,7 +1,8 @@
-import React from 'react';
 
 export default function Dev() {
     return (
-        <p>Hello</p>
+        <h1 className="text-3xl font-bold underline">
+            Hello world!
+        </h1>
     )
 }
